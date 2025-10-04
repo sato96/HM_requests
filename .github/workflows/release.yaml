@@ -4,10 +4,9 @@ on:
   push:
     tags:
       - "v*.*.*"
-      
+
 permissions:
   contents: write
-  releases: write
 
 jobs:
   build:
