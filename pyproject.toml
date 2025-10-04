@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "HM_requests"
-version = "0.1.4"
+version = "0.1.6"
 description = "Protocol-agnostic request library that unifies HTTP, CoAP, MQTT and future transports under a single API."
 authors = ["sato96 <samtozzi.st@gmail.com>"]
 license = "MIT"
