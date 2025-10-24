@@ -3,7 +3,6 @@ import requests
 from aiocoap import *
 import paho.mqtt.client as mqtt
 import json
-import urllib
 import asyncio
 
 class MyResponse:
@@ -15,8 +14,6 @@ class MyResponse:
         self.text = text or str(content)
 
     def json(self):
-        """Tenta di decodificare il contenuto come JSON"""
-        import json
         try:
             return json.loads(self.content)
         except json.JSONDecodeError:
