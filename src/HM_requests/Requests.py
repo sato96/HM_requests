@@ -144,7 +144,7 @@ class Request:
                 client.connect(urlparse(url).hostname, urlparse(url).port)
                 client.loop_start()
                 # Pubblica il JSON come stringa
-                result, mid = client.publish(topic, json.dumps(payload), 2)
+                result, mid = client.publish(topic, payload, 2)
                 if result == mqtt.MQTT_ERR_SUCCESS:
                     response["status_code"] = 200
                     response["content"] = {"status": "ok", "response": "sent"}
