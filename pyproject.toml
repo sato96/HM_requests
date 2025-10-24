@@ -8,10 +8,10 @@ readme = "README.md"
 packages = [{include = "HM_requests", from = "src"}]
 
 [tool.poetry.dependencies]
-python >= "^3.10"
-requests >= "^2.0.0"
-aiocoap >= "^0.4.0"
-paho-mqtt >= "^2.1.0"
+python = "^>=3.10"
+requests = "^>=2.0.0"
+aiocoap = "^>=0.4.0"
+paho-mqtt = "^>=2.1.0"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.0"
